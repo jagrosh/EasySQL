@@ -53,6 +53,26 @@ public abstract class SQLColumn<T> {
         return name+" = "+value;
     }
     
+    public String is(long value)
+    {
+        return is(Long.toString(value));
+    }
+    
+    public String is(int value)
+    {
+        return is(Integer.toString(value));
+    }
+    
+    public String isLessThan(long value)
+    {
+        return name+" < "+value;
+    }
+    
+    public String isGreaterThan(long value)
+    {
+        return name+" > "+value;
+    }
+    
     @Override
     public String toString()
     {
