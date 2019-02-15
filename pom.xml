@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jagrosh</groupId>
     <artifactId>EasySQL</artifactId>
-    <version>0.2</version>
+    <version>0.3</version>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
@@ -18,6 +18,15 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
+    
+    <distributionManagement>
+        <repository>
+            <id>bintray-jagrosh-maven</id>
+            <name>jagrosh-maven</name>
+            <url>https://api.bintray.com/maven/jagrosh/maven/EasySQL/;publish=1</url>
+        </repository>
+    </distributionManagement>
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
