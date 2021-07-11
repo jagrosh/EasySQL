@@ -1,3 +1,6 @@
+nb*.xml
+/target
+
 # Compiled class file
 *.class
 
